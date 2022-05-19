@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Degree Form</title>
+  </head>
+  <body>
+    <h2>Degree Form</h2>
+    <form action="/degree/" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+        {{ form }}
+        <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
